@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- titulo de la pagina -->
+        <title>ML Eventos-Contacto</title>
+        <!-- css -->
+        <link rel="stylesheet" href="estilo.css">
+        <!-- icono de pestaña -->
+        <link rel="icon" href="iconos/logo.ico">         
+    </head>
+    <!-- cuerpo -->
+    <body>
+        <hr>
+        <!-- cabecera -->
+        <header>
+            <div class="head">
+                <!-- menu -->
+                <a class="img-logo" href="index.html"><img src="iconos/logo.png" alt="Logo" ></a>
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="eventos.html">Eventos</a>
+                    </li>
+                    <li>
+                        <a href="galeria.html">Galeria</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </header>   
+        <!-- cuerpo principal -->
+        <main>
+            <hr>
+            <!-- titulo principal -->
+            <h1 class="cabecera">Contacto</h1>
+            <hr>
+            <!-- formulario de contacto -->
+            <div class="formulario">
+                <!-- ubicacion -->
+                <h2>Nuestra ubicacion:</h2>                  
+                <!-- inframe ubicacion           -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.887132728895!2d-58.39278158519517!3d-34.60701546517874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac3a4e83d85%3A0x3b697be8cd7393b3!2sRodr%C3%ADguez%20Pe%C3%B1a%20181%2C%20C1020%20ADC%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1621357229294!5m2!1ses-419!2sar" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <!-- formulario -->
+                <form action="https://formspree.io/f/xeqveyzp" method="POST" target="_blank">                
+                    <h3>Formulario de contacto</h3>   
+                    <!-- nombre -->
+                    <label >
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                    </label>
+                    <!-- apellido -->
+                    <label >
+                        <input type="text" name="apellido" placeholder="Apellido" required>
+                    </label>
+                    <!-- e-mail -->
+                    <label >
+                        <input type="email" name="email" placeholder="E-mail" required>
+                    </label>
+                    <!-- telefono -->
+                    <label >
+                        <input type="tel" name="telefono" placeholder="Telefono" required>
+                    </label>
+                    <!-- selecto de eventos -->
+                    <label >Tipo de evento
+                        <select name="Selector" >                        
+                            <option value="casamiento">Casamiento</option>
+                            <option value="15">Cumpleaños de 15</option>
+                            <option value="corporativo">Evento corporativo</option>
+                            <option value="cumple">Cumpleaños</option>
+                            <option value="bar/bat">Bar/Bar Mitzvah</option>
+                            <option value="baut/comu">Bautismo/Comunion</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </label>
+                    <br>
+                    <!-- fecha -->
+                    <label >Fecha aproximada del evento:
+                        <input type="date">
+                    </label>
+                    <!-- comentarios (corregira ortografia) -->
+                    <label >
+                        <textarea name="comentarios" cols="55" row="150" placeholder="Comentario" spellcheck="true"></textarea>
+                    </label>
+                    <!-- boton de enviar -->
+                    <label >
+                        <input class="boton" type="submit" value="Enviar">
+                    </label>        
+                </form>
+            </div>
+            <hr>        
+        </main>
+        <!-- pie -->
+        <footer>
+            <div class="foot">                
+                <div class="links">
+                    <!-- redes sociales -->
+                    <a href="#"><img src="iconos/facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="iconos/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="iconos/twitter.png" alt="twitter"></a>
+                    <a href="#"><img src="iconos/pinterest.png" alt="pinterest"></a>                    
+                </div>          
+            </div>           
+        </footer>
+        <hr>                   
+    </body>
+</html>
